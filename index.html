@@ -5,8 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Get the page style from NightPawArt.css -->
-        <link rel = "stylesheet" href = "NightPawArt.css">
+
+        <!-- Get the page style from Style.css -->
+        <link rel = "stylesheet" href = "Style.css">
     </head>
     <body>
         <!--Grey section-->
@@ -15,27 +16,27 @@
             <div id = "Banner">
                 <!--Add the banner image-->
                 <img src="images/Banner.svg" alt="Paw prints of a 3-legged wolf" 
-                height = "200px">
+                width = 100%>
 
             </div>
             <!--900px by 30px link menu under the banner-->
-            <div id = "LinkMenu">
+            <nav id = "LinkMenu">
 
                 <!--3 300px by 30px boxes inside the link menu. 
                  The id attributes will be "linkSlot" with 
                  integers from 1 to 3 added to the end-->
-                <div id = "LinkSlot1">
+                <div id = "LinkSlot1" class = "linkSlot">
                     <a href="FrontPage.html">Front page</a>
                 </div>
 
-                <div id = "LinkSlot2">
+                <div id = "LinkSlot2" class = "linkSlot">
                     <a href="Characters.html">Characters</a>
                 </div>
 
-                <div id = "LinkSlot3">
+                <div id = "LinkSlot3" class = "linkSlot">
                     <a href="Icons.html">Icons</a>
                 </div>
-            </div>
+            </nav>
 
             <!--Container for the columns -->
             <div id = "F_ColumnContainer">

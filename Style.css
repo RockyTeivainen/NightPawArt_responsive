@@ -1,0 +1,43 @@
+/*Front page*/
+body{
+    display:flex;
+    background-color: #89CFF0;
+    /*Remove the unwanted 8 pixel margin around the content*/
+    margin: 0%;
+    
+
+    /* Hide horizontal scrollbar */
+    overflow-x: hidden;
+}
+#Sec1{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+}
+/*Control the navigation menu below the banner.
+Make each slot to be 15% high relative to the viewport width.
+Center the links*/
+
+#LinkMenu{
+    font-size: 700%;
+    width: 100vw;
+    height: 15vw;
+}
+.LinkSlot{
+
+    width: 100vw;
+    height: 15vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+#LinkSlot1{
+    background-color: #ff0000;
+}
+#LinkSlot2{
+    background-color: #ffc0cb;
+}
+#LinkSlot3{
+    background-color: #008000;
+}
