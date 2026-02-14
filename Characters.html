@@ -4,27 +4,34 @@
         <!-- Specify character set to be UTF-8 -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Get the page style from NightPawArt.css -->
-        <link rel = "stylesheet" href = "NightPawArt.css">
+        <!-- Get the page style from Style.css -->
+        <link rel = "stylesheet" href = "Style.css">
+
+        <!--File for debugging css  -->
+        <!-- <link rel = "stylesheet" href = "Debug.css"> -->
+        
     </head>
     <body>
         <!--Grey section-->
         <div id = "Sec1">
-            <!--900px by 200px banner to the front page-->
-            <div id = "Banner">
+            <!--100% wide banner at the top ogf the page-->
                 <!--Add the banner image-->
-                <img src="images/Banner.svg" alt="Paw prints of a 3-legged wolf" 
-                height = "200px">
+                <img 
+                id = "PawBanner" 
+                src="images/Banner.svg" 
+                alt="Paw prints of a 3-legged wolf" 
+                width = "100%">
 
-            </div>
-            <!--900px by 30px link menu under the banner-->
+            <!--100% wide link menu below the banner-->
             <nav id = "LinkMenu">
 
-                <!--3 300px by 30px boxes inside the link menu. 
-                 The id attributes will be "linkSlot" with 
+                <!--3 boxes inside the link menu. 
+                 The id attributes will be "LinkSlot" with 
                  integers from 1 to 3 added to the end-->
+                <nav id = "LinkMenu">
+
                 <div id = "LinkSlot1" class = "LinkSlot">
-                    <a href="FrontPage.html">Front page</a>
+                    <a href="index.html">Front page</a>
                 </div>
 
                 <div id = "LinkSlot2" class = "LinkSlot">
@@ -35,33 +42,28 @@
                     <a href="Icons.html">Icons</a>
                 </div>
             </nav>
-
-
-
-
-
-            <!--Container for the columns  -->
-            <div id = "C_ColumnContainer">
-                <!--2 white columns inside the container
-                Put images inside the columns (two images, the first above the second one)-->
-                <div id = "C_Column1">
-                    <img src="images/NightFurPup.svg" alt="Cartoon wolf shown from front 
-                    side, left side (light blue) and right side (dark blue).">
-                </div>
-                <div id = "C_Column2">
-                    <img src="images/Star.svg" alt="3-legged, winged cartoon wolf. shown from the front side and the left side.
-                    The left side is light blue, and the right side is dark blue.
-                    Her wings and tail are orangen and she has orange 
-                    flame-like tuft n her head. Her back paws are made from crystals">
-                </div>
-            </div>
-
-
-
+            </nav>
+            <div id = "CharacterList">
+                <!--Images with 100% width compared to the page-->
+                <img 
+                id = "NightFurPup" 
+                src="images/NightFurPup.svg" 
+                alt="Cartoon wolf shown from front 
+                side, left side (light blue) and right side (dark blue)"
+                width = "100%">
 
 
             
+                <img 
+                id = "StarThePup" 
+                src="images/Star.svg" 
+                alt="3-legged, winged cartoon wolf. shown from the front side and the left side.
+                The left side is light blue, and the right side is dark blue.
+                Her wings and tail are orange and she has orange 
+                flame-like tuft on her head. 
+                Her back paws are made from crystals"
+                width = "100%">>
+            </div>
         </div>
-
     </body>
 </html>
