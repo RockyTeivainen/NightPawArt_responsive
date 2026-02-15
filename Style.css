@@ -1,50 +1,70 @@
-/* Universal */
-body{
-    background-color: #89CFF0;
-    /*Remove the unwanted 8 pixel margin around the content*/
-    margin: 0;
-    padding-left: 1vw;
-    padding-right: 1vw;
+/*600px wide screens and smaller  */
+@media (max-width: 600px) {
+    /* Universal */
+    body{
+        background-color: #89CFF0;
+        /*Remove the unwanted 8 pixel margin around the content*/
+        margin: 0;
+        padding-left: 3vw;
+        padding-right: 3vw;
 
-    
+        
 
-    /* Hide horizontal scrollbar */
-    overflow-x: hidden;
-}
-#Sec1{
-    width: 100%;
-    height: 70%;
-}
-/*Control the navigation menu below the banner.
-Make each slot high enough fith the content.
-Center the links*/
+        /* Hide horizontal scrollbar */
+        overflow-x: hidden;
+    }
+    #Sec1{
+        width: 100%;
+        height: 100%;
+    }
+    /*Control the navigation menu below the banner.
+    Make each slot high enough fith the content.
+    Center the links*/
 
-#LinkMenu{
-    margin: 0;
-    font-size: 7rem;
-    width: 100%;
-    height: fit-content;
-}
-.LinkSlot{
-    width: 100%;
-    height: 9vw;
+    #LinkMenu{
+        margin: 0;
+        font-size: 3.5rem;
+        width: 100%;
+        height: fit-content;
+    }
+    .LinkSlot{
+        width: 100%;
+        height: 15%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-}
-#LinkSlot1{
-    background-color: #ff0000;
-}
-#LinkSlot2{
-    background-color: #ffc0cb;
-}
-#LinkSlot3{
-    background-color: #008000;
-}
+    }
+    #LinkSlot1{
+        background-color: #ff0000;
+    }
+    #LinkSlot2{
+        background-color: #ffc0cb;
+    }
+    #LinkSlot3{
+        background-color: #008000;
+    }
 
-/*Characters page*/
-#CharacterList{
-    margin-top: 30%;
+    /*Make all images block elements, 
+    so they don't leave the tiny default gaps*/
+    img{
+        display: block;
+    }
+
+    /*Characters page*/
+    /*Leave a small gap after
+    the nav bar*/
+    #CharacterZone{
+        /*Use grid to posiition 
+        the images  */
+        display: grid;
+        grid-template: 5% 1fr 5% 1fr 5%/ 100%;
+
+    }
+    #NightFurPup{
+        grid-area: 2/1/2/1;
+    }
+
+
 }
