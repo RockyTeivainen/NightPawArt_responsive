@@ -21,7 +21,7 @@ Center the links*/
 
 #LinkMenu{
     margin: 0;
-    font-size: 7em;
+    font-size: 7rem;
     width: 100%;
     height: fit-content;
 }
