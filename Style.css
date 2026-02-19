@@ -59,11 +59,8 @@
         /*Use grid to posiition 
         the images  */
         display: grid;
-        grid-template: 5% 1fr 5% 1fr 5%/ 100%;
-
-    }
-    #NightFurPup{
-        grid-area: 2/1/2/1;
+        grid-template-columns: 1;
+        grid-row-gap: 5%;   
     }
 
 
